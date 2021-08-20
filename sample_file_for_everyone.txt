@@ -1,0 +1,27 @@
+Correlation plots, also known as correlograms for more than two variables, 
+help us to visualize the correlation between continuous variables. 
+In this tutorial we will show you how to plot correlation in base R 
+with different functions and packages.
+
+How to plot correlation in R?
+
+There are two ways for plotting correlation in R. 
+On the one hand, you can plot correlation between 
+two variables in R with a scatter plot. 
+Note that the last line of the following 
+block of code allows you to add the 
+correlation coefficient to the plot.
+
+# Data generation
+set.seed(1)
+x <- 1:100
+y <- x + rnorm(100, mean = 0, sd = 15)
+
+# Creating the plot
+plot(x, y, pch = 19, col = "lightblue")
+
+# Regression line
+abline(lm(y ~ x), col = "red", lwd = 3)
+
+# Pearson correlation
+text(paste("Correlation:", round(cor(x, y), 2)), x = 25, y = 95)
