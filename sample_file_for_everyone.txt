@@ -2,6 +2,9 @@ Correlation plots, also known as correlograms for more than two variables,
 help us to visualize the correlation between continuous variables. 
 In this tutorial we will show you how to plot correlation in base R 
 with different functions and packages.
+<<<<<<< HEAD
+How do you do?
+=======
 
 
 <<<<<<< HEAD
