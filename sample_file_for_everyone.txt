@@ -7,6 +7,10 @@ How do you do?
 =======
 
 
+<<<<<<< HEAD
+ -- What's the software likes RStudio cab be used with Python?
+
+=======
 what do you do?
 เราสามารถสร้างกราฟแบบคอแรคชั่นในภาษาอาร์อย่างไร?
 what do you do?
