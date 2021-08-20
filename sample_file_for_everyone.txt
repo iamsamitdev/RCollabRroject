@@ -3,8 +3,12 @@ help us to visualize the correlation between continuous variables.
 In this tutorial we will show you how to plot correlation in base R 
 with different functions and packages.
 
+
 what do you do?
 เราสามารถสร้างกราฟแบบคอแรคชั่นในภาษาอาร์อย่างไร?
+what do you do?
+เราสามารถสร้างกราฟแบบคอแรคชั่นในภาษาอาร์อย่างไร?
+
 
 There are two ways for plotting correlation in R. 
 On the one hand, you can plot correlation between 
