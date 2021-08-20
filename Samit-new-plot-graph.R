@@ -23,3 +23,5 @@ text((1:5)+0.4, rep(2,5), cex=0.6, (15:19))
 # Plot symbols 20-25 with labels
 points((1:6)*0.8+0.2, rep(1,6), cex=2, pch=(20:25))
 text((1:6)*0.8+0.5, rep(1,6), cex=0.6, (20:25))
+
+ทดสอบ 
