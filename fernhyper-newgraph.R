@@ -4,14 +4,24 @@ cars <- c(1, 3, 6, 4, 9)
 # Graph cars
 barplot(cars)
 
-# Read values from tab-delimited autos.dat 
-autos_data <- read.table("C:/R/autos.dat", header=T, sep="\t")
+# Define cars vector with 5 values
+cars <- c(1, 3, 6, 4, 9)
 
-# Graph autos with adjacent bars using rainbow colors
-barplot(as.matrix(autos_data), main="Autos", ylab= "Total",
-        beside=TRUE, col=rainbow(5))
+# Define some colors ideal for black & white print
+colors <- c("white","grey70","grey90","grey50","black")
 
-# Place the legend at the top-left corner with no frame  
-# using rainbow colors
-legend("topleft", c("Mon","Tue","Wed","Thu","Fri"), cex=0.6, 
-       bty="n", fill=rainbow(5));
+# Calculate the percentage for each day, rounded to one 
+# decimal place
+car_labels <- round(cars/sum(cars) * 100, 1)
+
+# Concatenate a '%' char after each value
+car_labels <- paste(car_labels, "%", sep="")
+
+# Create a pie chart with defined heading and custom colors
+# and labels
+pie(cars, main="Cars", col=colors, labels=car_labels,
+    cex=0.8)
+
+# Create a legend at the right   
+legend(1.5, 0.5, c("Mon","Tue","Wed","Thu","Fri"), cex=0.8, 
+       fill=colors)
